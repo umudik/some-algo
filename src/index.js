@@ -33,16 +33,16 @@ getAnomaly = function (tree) {
     } catch (error) {
         const findR = new RegExp("'r'", 'gi');
         const findL = new RegExp("'l'", 'gi');
-        const results = []
+        const matchArray = []
 
         while (findR.exec(String(error))) {
-            results.push({ index: findR.lastIndex, letter: "r" });
+            matchArray.push({ index: findR.lastIndex, letter: "r" });
         }
 
         while (findL.exec(String(error))) {
-            results.push({ index: findL.lastIndex, letter: "l" });
+            matchArray.push({ index: findL.lastIndex, letter: "l" });
         }
-        const sortedArray = results.sort(function (a, b) {
+        const sortedArray = matchArray.sort(function (a, b) {
             a.index - b.index
         })
 
