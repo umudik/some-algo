@@ -1,7 +1,7 @@
 const { hasAnomaly } = require("../src/index.js")
 const assert = require("assert")
 
-test("B Tree 1", function () {
+test("B Deep Anomaly", function () {
     const anomaly1 = {
         l: null,
         r: {
@@ -17,7 +17,7 @@ test("B Tree 1", function () {
 
 })
 
-test("B Tree 2", function () {
+test("B Anomaly 2", function () {
     const node = {
         l: null,
         r: null
@@ -29,7 +29,7 @@ test("B Tree 2", function () {
     assert.equal(hasAnomaly(anomaly2), false)
 })
 
-test("B Tree 3", function () {
+test("B Valid Tree", function () {
     const normal = {
         l: null,
         r: {
