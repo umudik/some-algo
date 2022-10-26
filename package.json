@@ -1,0 +1,25 @@
+{
+  "name": "some-algo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umudik/some-algo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umudik/some-algo/issues"
+  },
+  "homepage": "https://github.com/umudik/some-algo#readme",
+  "dependencies": {
+    "jest": "^29.2.2",
+    "lodash": "^4.17.21",
+    "uuid": "^9.0.0"
+  }
+}
